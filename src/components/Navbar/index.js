@@ -13,12 +13,17 @@ const Navbar = () => {
     <>
       <Nav>
         <NavLink to='/'>
-          <img src={require('../../images/logo.svg')} alt='logo' />
+          <img
+            style={{ height: 100 }}
+            src={require('../../images/Karki.png')} alt='logo' />
         </NavLink>
         <Bars />
         <NavMenu>
           <NavLink to='/about' activeStyle>
             About
+          </NavLink>
+          <NavLink to='/sign-up' activeStyle>
+            Products
           </NavLink>
           <NavLink to='/services' activeStyle>
             Services
@@ -26,9 +31,7 @@ const Navbar = () => {
           <NavLink to='/contact-us' activeStyle>
             Contact Us
           </NavLink>
-          <NavLink to='/sign-up' activeStyle>
-            Sign Up
-          </NavLink>
+
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
